@@ -1,0 +1,8 @@
+header {
+    h1 { color: aqua;}
+    background-color: bisque;
+    display: flex;
+    width: 60%;
+    height: 35%;
+
+}
