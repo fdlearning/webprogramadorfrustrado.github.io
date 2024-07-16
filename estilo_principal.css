@@ -1,8 +1,194 @@
-header {
-    h1 { color: aqua;}
-    background-color: bisque;
-    display: flex;
-    width: 60%;
-    height: 35%;
+body {
+    margin:0%;
+    padding:0%;
+    
+}
 
+
+header {
+   background-color: rgba(233, 52, 89, 0.649);
+   border:black solid 0.04em;
+   width: 100vw;
+   height: 25vh;
+   display: flex;
+   flex-direction: row-reverse;
+   align-items: center;
+   justify-content: space-around;
+}
+/* Definición de elementos internos del "header"*/
+.cont_titulo {
+    background-color: transparent;
+    width: 65%;
+    height: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+#tit_principal {
+    font-family:"Ubuntu Sans", sans-serif;
+    font-size: 110%;
+    color:gold;
+}
+
+.cont_imagen {
+    background-color:transparent;
+    width: 20%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+#img_presentacion {
+    width: 100%;
+    height: 100%; 
+}
+/*---------*/
+
+main {
+    background-color: rgba(211, 211, 206, 0.882);
+    border:black solid 0.04em;
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+
+/*Descripción de elementos de main */
+
+.cont_tit_descrp{
+    background-color: transparent;
+    width: 65%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#tit_descrp {
+
+    color: #990000;
+    font-family:"Ubuntu Sans", sans-serif ;
+    font-weight: bold;
+    font-size: 100%;
+}
+
+.descrp {
+    background-color: transparent;
+    width: 70%;
+    height: 95%;
+    
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    text-align: justify;
+}
+
+.txt-descrp {
+    color: #0000FF;
+    font-family: "Ubuntu Sans","sans-serif";
+    font-size: 80%;
+}
+
+
+
+footer {
+    background-color: rgba(211, 211, 206, 0.882);
+    border: black solid 0.04em;
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont_final {
+    background-color:transparent;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+   
+    
+}
+
+.btn_final {
+    background-color: #990000;
+    color: gold;
+    width: 12%;
+    height: 50%;
+    font-family:"Ubuntu Sans","sans-serif";
+    font-size: 45%;
+    font-weight: bold;
+    text-align:center;
+}
+
+.btn_final:hover {
+    background-color: #e26f6f;
+    color: yellowgreen;
+}
+
+
+
+/*Medidas especiales para navegadores "normales"*/
+@media (min-width:1024px){
+    #tit_principal{
+        font-family:"Ubuntu Sans", sans-serif;
+        font-size: 200%;
+        color:gold;
+    }
+
+    .txt-descrp {
+        color: #0000FF;
+        font-family: "Ubuntu Sans","sans-serif";
+        font-size: 150%;
+    }
+
+    #tit_descrp {
+
+        color:#990000;
+        font-family:"Ubuntu Sans", sans-serif ;
+        font-weight: bold;
+        font-size: 150%;
+    }
+
+    .cont_final {
+        background-color:transparent;
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+       
+        
+    }
+    
+    .btn_final {
+        background-color: #990000;
+        color: gold;
+        width: 8%;
+        height: 65%;
+        font-family:"Ubuntu Sans","sans-serif";
+        font-size: 150%;
+        font-weight: bold;
+    }
+    
+    .btn_final:hover {
+        background-color: #e26f6f;
+        color: yellowgreen;
+    }
 }
