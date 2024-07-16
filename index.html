@@ -5,17 +5,54 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <link rel="stylesheet" type="text/css" href="estilo_principal.css"/>  
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
-            <h1>¡BIENVENIDOS PROGRAMADORES FRUSTRADOS!</h1>
+            <!--Creamos un div(contenedor par el titulo del documento)-->
+            <div class="cont_titulo">
+                <h1 id="tit_principal">¡BIENVENIDOS PROGRAMADORES FRUSTRADOS!</h1>
+                
+            </div>
+            <!--Creamos un div(contenedor para la imagen "avatar")-->
+            <div class="cont_imagen">
+                <img src="media/pictures/com.jpeg"  alt="no disponible" id="img_presentacion"/>
+            </div>
         </header>
         <main>
-            <h3>contenido</h3>
+            <!--Vamos a crear el contenedor de tiulo-descripción-->
+            <div class="cont_tit_descrp">
+                <h3 id="tit_descrp">DESCRIPCIÓN</h3>
+            </div>
+            <!--Vamos a crear el contendor de la descripcion-->
+            <div class="descrp">
+                <p class="txt-descrp">
+                    En esta página web me acompañaréis por el apasionante mundo auto-didacta en el cual aprendré
+                    las habilidades y conocimientos necesarios para convertirme en desarrollador full-stack.
+                    Iré documentando en formato-video tutorial y en la web todos y cada uno de los pasos que voy siguiendo.
+                    También documentaré mis errores y frustraciones, para que podáis apreciar donde me he atascado en el coódigo
+                    y como conseguí resolverlo.
 
+                    El objetivo de este formato de apredizaje es mostrar como se puede ser casi auto-suficiente con las tecnológias 
+                    y herramientas disponibles hoy en día. Pero en este camino no parto desde el cero más absoluto ya que dispongo
+                    de conocimientos muy básicos en html, css y xml que son lenguajes de marcado. Los objetivos se describirán en la 
+                    próxima página.
+                </p>
+            </div>
         </main>
         <footer>
-            <h3>final del documento</h3>
+            <div class="cont_final"><!--Aquí vamos a crear los elementos finales que vamos a mostrar en el pie de página-->
+                <button class="btn_final">Itinerario</button>
+                <button class="btn_final">Python</button>
+                <button class="btn_final">DJANGO</button>
+                <button class="btn_final">HTML <br/>CSS</button>
+                <button class="btn_final">JS</button>
+                <button class="btn_final">SQL</button>
+                <button class="btn_final">JAVA</button>
+            </div>
+            
         </footer>
     </body>
 </html>
